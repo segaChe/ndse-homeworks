@@ -8,8 +8,7 @@ function randomNumber (min, max) {
 }
 
 const start       = Math.floor(randomNumber(0, 10001));
-const rang        = Math.floor(randomNumber(10, 5001));
-const end         = start + rang;
+const end         = start + Math.floor(randomNumber(10, 5001));
 const rightAnswer = Math.floor(randomNumber(start, end));
 
 function checkAnswer (input) {
