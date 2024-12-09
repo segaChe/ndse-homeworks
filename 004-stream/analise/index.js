@@ -27,7 +27,9 @@ function analise (inputStr) {
         }
     });
 
-    return result;
+    result.successPercent = (100 * result.success) / result.count;
+
+    return `Сыграно ${result.count} партий\nКоличество выигранных партий ${result.success}\nКоличество проигранных партий ${result.failure}\nУспех ${result.successPercent}%`;
 }
 
 
