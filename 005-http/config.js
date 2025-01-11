@@ -1,2 +1,2 @@
-const WEATHER_API_KEY  = '7b903f6bceb9a3ee5a9017b1d4dbb0c9';
+const WEATHER_API_KEY  = '';
 const WEATHER_BASE_URL = 'http://api.weatherstack.com/';
