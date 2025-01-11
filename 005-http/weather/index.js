@@ -25,6 +25,7 @@ async function getWeather ({ query, units = 'm' }) {
             res.on('end', () => {
                 let parseData = JSON.parse(rowData);
                 console.log(parseData);
+                console.log(`${parseData?.request?.query} ${parseData?.current?.temperature}°C`);
             });
         })
         .on('error', (err) => {
