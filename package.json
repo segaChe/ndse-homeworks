@@ -6,7 +6,7 @@
   "author": "Sergey Chernoskutov <chernoskytofff@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev-http": "node -r dotenv/config 005-http/weather/index.js"
+    "weather": "node -r dotenv/config 005-http/weather/index.js"
   },
   "dependencies": {
     "yargs": "^17.7.2"
