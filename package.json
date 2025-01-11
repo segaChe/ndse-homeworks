@@ -5,7 +5,13 @@
   "repository": "git@github.com:segaChe/ndse-homeworks.git",
   "author": "Sergey Chernoskutov <chernoskytofff@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev-http": "node -r dotenv/config 005-http/weather/index.js"
+  },
   "dependencies": {
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7"
   }
 }
