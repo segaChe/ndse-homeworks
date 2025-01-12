@@ -6,6 +6,12 @@
   "author": "Sergey Chernoskutov <chernoskytofff@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.21.2",
+    "pm2": "^5.4.3",
+    "uuid": "^11.0.5",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
