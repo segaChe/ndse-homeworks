@@ -9,7 +9,7 @@ const store = new Store();
 const app = express();
 app.use(express.json());
 
-app.get('/api/user/login', (req, res) => {
+app.post('/api/user/login', (req, res) => {
     res.status(201);
     res.json({ id: 1, mail: 'test@mail.ru' });
 });
