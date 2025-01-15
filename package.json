@@ -5,6 +5,9 @@
   "repository": "git@github.com:segaChe/ndse-homeworks.git",
   "author": "Sergey Chernoskutov <chernoskytofff@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start-books": "pm2 start ./006-express/index.js --watch"
+  },
   "dependencies": {
     "express": "^4.21.2",
     "pm2": "^5.4.3",
