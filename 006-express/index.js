@@ -50,13 +50,6 @@ app.post('/api/books/', (req, res) => {
 
 app.put('/api/books/:id', (req, res) => {
     const { id }             = req.params;
-    const { title, authors } = req.body;
-
-    if (!title || !authors) {
-        res.status(400);
-        res.json('400 | Bad request | Не задано обязательное поле title или authors');
-        return;
-    }
 
     const book = store.updateBook(req.body, id);
     if (book) {
