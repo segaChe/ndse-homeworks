@@ -1,8 +1,8 @@
 const express      = require('express');
 const { v4: uuid } = require('uuid');
 
-const Store = require('./store');
-const Book  = require('./Book');
+const Store = require('./Store.js');
+const Book  = require('./Book.js');
 
 const store = new Store();
 
