@@ -1,6 +1,6 @@
 const { v4: uuid } = require('uuid');
 
-export default class Book {
+class Book {
     constructor (
         {
             title,
@@ -22,3 +22,5 @@ export default class Book {
 
     }
 }
+
+module.exports = Book;

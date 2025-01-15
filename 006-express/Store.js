@@ -1,4 +1,4 @@
-export default class Store {
+class Store {
     constructor (books = []) {
         this.books = books;
     }
@@ -26,11 +26,13 @@ export default class Store {
         if (idx > -1) {
             const books = JSON.parse(JSON.stringify(this.books));
             books[idx] = { ...JSON.parse(JSON.stringify(this.books[idx])), ...updatedBook };
-            this.books[idx] = books;
+            this.books = books;
             return books[idx];
         }
         else {
             return null;
         }
     }
-};
+}
+
+module.exports = Store;
