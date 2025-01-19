@@ -10,7 +10,6 @@ async function getWeather ({ query, units = 'm' }) {
 
     const url = `${baseUrl}/current?access_key=${apiKey}&query=${query}&units=${units}`;
 
-    console.log(url);
     await http
         .get(url, (res) => {
             const { statusCode } = res;
