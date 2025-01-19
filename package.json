@@ -6,12 +6,17 @@
   "author": "Sergey Chernoskutov <chernoskytofff@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "weather": "node -r dotenv/config 005-http/weather/index.js"
+    "weather": "node -r dotenv/config 005-http/weather/index.js",
+    "start-books": "pm2 start ./006-express/index.js --watch"
   },
   "dependencies": {
+    "express": "^4.21.2",
+    "pm2": "^5.4.3",
+    "uuid": "^11.0.5",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
   }
 }
