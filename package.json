@@ -6,6 +6,7 @@
   "author": "Sergey Chernoskutov <chernoskytofff@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "weather": "node -r dotenv/config 005-http/weather/index.js",
     "start-books": "pm2 start ./006-express/index.js --watch"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "yargs": "^17.7.2"
   },
   "devDependencies": {
+    "dotenv": "^16.4.7",
     "nodemon": "^3.1.9"
   }
 }
